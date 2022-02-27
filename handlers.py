@@ -8,7 +8,7 @@ from settings import WELCOME_MESSAGE, TELEGRAM_SUPPORT_CHAT_ID, REPLY_TO_THIS_ME
 def start(update, context):
     update.message.reply_text(WELCOME_MESSAGE,
         reply_markup=InlineKeyboardMarkup([
-            [ InlineKeyboardButton(text="CHANEL&HARGA", url=f"{C.SUPPORT_GROUP}"), InlineKeyboardButton(text="TESTIMONI", url=f"{C.UPDATE_CHANNEL}")]
+            [ InlineKeyboardButton(text="CHANEL&HARGA", url=f"https://t.me/Jual_Nokos_Telegram"), InlineKeyboardButton(text="TESTIMONI", url=f"https://t.me/testinokosindostore")]
         ])
 
     user_info = update.message.from_user.to_dict()
